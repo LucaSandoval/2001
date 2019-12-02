@@ -8,23 +8,66 @@
 <title>CodePen - 2001</title>
 <style>
   h2{
-  background:tomato;
   color:white;
   font-size:35px;
+}
+
+.fall{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS83bpa6CS1Y6clmH8HmKhTEVfdGIH2WKRksOc8iJff3dy7wYr0&s");  
+}
+
+.winter{
+  background-image: url("https://images.unsplash.com/photo-1493848666592-59b4f68db5fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+}
+
+#liststyle{
+  color: white;
+  font-weight: bold;
+}
+
+#winterbackground{
+  background:lightblue;
+    
+}
+
+#fallbackground{
+  background:tomato;
+  
 }
 </style>
 </head>
 <body translate="no">
-<h2>My Class List</h2>
 <ul>
+<li>
+<div id="winterbackground">
+<h2 class="winter">My Winter Tri Class List</h2>
+<ol id="liststyle">
 <li>Software Development</li>
 <li>Precalculus</li>
+<li>American Studies</li>
 <li>American Studies</li>
 <li>Graphic Design</li>
 <li>Biology</li>
 <li>Study Hall</li>
 <li>Spanish 4 Hon</li>
+</ol>
+</div>
+</li>
+<li>
+<div id="fallbackground">
+<h2 class="fall">My Fall Tri Class List</h2>
+<ol id="liststyle">
+<li>Personal Finance</li>
+<li>Precalculus</li>
+<li>American Studies</li>
+<li>American Studies</li>
+<li>Study Hall</li>
+<li>Biology</li>
+<li>Entrepreneurial Leadership</li>
+<li>Spanish 4 Hon</li>
+</ol>
+</div>
+</li>
 </ul>
 </body>
 </html>
-
