@@ -7,7 +7,13 @@
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <title>CodePen - 2001</title>
 <style>
-  h2{
+  @import "compass/css3";
+
+li{
+  color: black;
+}
+
+h2{
   color:white;
   font-size:35px;
 }
@@ -34,6 +40,25 @@
   background:tomato;
   
 }
+
+.vert{
+  display:inline;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
 </style>
 </head>
 <body translate="no">
@@ -41,7 +66,7 @@
 <li>
 <div id="winterbackground">
 <h2 class="winter">My Winter Tri Class List</h2>
-<ol id="liststyle">
+<ol id="liststyle" class="flex-container">
 <li>Software Development</li>
 <li>Precalculus</li>
 <li>American Studies</li>
@@ -56,7 +81,7 @@
 <li>
 <div id="fallbackground">
 <h2 class="fall">My Fall Tri Class List</h2>
-<ol id="liststyle">
+<ol id="liststyle" class="flex-container">
 <li>Personal Finance</li>
 <li>Precalculus</li>
 <li>American Studies</li>
@@ -69,5 +94,6 @@
 </div>
 </li>
 </ul>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </body>
 </html>
